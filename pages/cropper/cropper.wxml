@@ -1,0 +1,5 @@
+<view class="page-wrapper">
+  <cropper class="test-cropper" bind:cutOk="getImgOk" bind:cancel="cutCancel" options="{{cropperOpt}}"></cropper>
+  <!-- <button bindtap="getImg">获取图片</button> -->
+  <!-- <image src="{{src}}" mode="widthFix" style="width: 200px;"></image> -->
+</view>

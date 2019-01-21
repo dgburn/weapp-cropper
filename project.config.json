@@ -1,0 +1,13 @@
+{
+	"appid": "wx458363f98d5f9923",
+	"projectname": "weapp-cropper",
+	"compileType": "miniprogram",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"libVersion": "2.4.3"
+}

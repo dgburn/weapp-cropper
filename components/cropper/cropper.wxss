@@ -1,0 +1,92 @@
+.com-weapp-cropper-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .8);
+  padding-bottom: 100rpx;
+  padding-top: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.weapp-cropper-wrapper {
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  overflow: auto;
+}
+.img {
+  /* margin-top: 50rpx; */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.movable-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+.movable-view {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #1AAD16;
+  box-shadow: 0 0 100rpx 600rpx rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+}
+/* .movable-view::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1rpx solid rgba(47, 152, 51, 0.8);
+} */
+.movable-view .conner-block {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 6rpx solid #1AAD16;
+  border-bottom: 6rpx solid #1AAD16;
+}
+.movable-view .size {
+  padding: 0 2rpx;
+  flex-shrink: 0;
+  font-size: 20rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.btns {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32rpx;
+  z-index: 1000;
+}
+.btns .cancel {
+  color: #fff;
+}
+.btns .confirm {
+  color: #1AAD16;
+}

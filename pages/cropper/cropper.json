@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "cropper",
+  "usingComponents": {
+    "cropper": "/components/cropper/cropper"
+  }
+}

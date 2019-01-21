@@ -1,0 +1,10 @@
+<view class="page-wrapper">
+  <view class="img-url" bindtap="cutImgUrl"><text>裁剪网络图</text><image src="/images/arrow.png" mode="widthFix"></image></view>
+  <view class="img-local" bindtap="cutImgLocal"><text>裁剪本地图</text><image src="/images/arrow.png" mode="widthFix"></image></view>
+  <view class="img-choose" bindtap="cutImgChoose" data-mode="{{0}}"><text>裁剪相册图(自由比例)</text><image src="/images/arrow.png" mode="widthFix"></image></view>
+  <view class="img-choose" bindtap="cutImgChoose" data-mode="{{16/9}}"><text>裁剪相册图(固定比例)</text><image src="/images/arrow.png" mode="widthFix"></image></view>
+  
+</view>
+<view class="cuted-img-wrap">
+  <image class="cuted-img" src="{{src}}" style="background: green;" mode="widthFix"></image>
+</view>

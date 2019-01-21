@@ -1,0 +1,34 @@
+.page-wrapper {
+}
+.page-wrapper view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 32rpx;
+  border-bottom: #eee;
+}
+.page-wrapper view image {
+  width: 15rpx;
+}
+.img-url {
+  background-color: rgb(103, 227, 231);
+}
+.img-local {
+  background-color: rgb(180, 91, 91);
+}
+.img-choose {
+  background-color: rgb(165, 165, 95);
+}
+.cuted-img-wrap {
+  display: block;
+  padding: 50rpx 30rpx;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.cuted-img-wrap .cuted-img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+<view class="com-weapp-cropper-wrapper">
+  <view class="weapp-cropper-wrapper" style="max-height: {{cropperWrapMaxHeight}}px">
+    <image class="img dom" mode="widthFix" style="width: {{cropperOpts.width}}px; height: {{cropperOpts.height}}px" src="{{imgTempFilePath}}"></image>
+    <movable-area class="movable-area"
+      style="width: {{cropperOpts.width}}px; height: {{cropperOpts.height}}px;"
+    >
+      <movable-view
+        class="movable-view"
+        bindtouchstart="cropperMovStart"
+        bindtouchend="cropperTouchend"
+        bindchange="movableViewChange"
+        x="{{x}}"
+        y="{{y}}"
+        style="width: {{movableViewWidth}}px; height: {{movableViewHeight}}px; max-width: 100%; max-height: 100%; min-width: 40rpx; min-height: 40rpx; border: {{customStyle.border}}"
+        direction="all"
+        data-name="movable-view"
+        animation="{{false}}"
+        >
+        <view class="conner-block dom"
+        data-name="view"
+        catchtouchmove="cornerTouchmove"
+        catchtouchstart="cornerTouchstart"
+        catchtouchend="cornerTouchend"
+        style="{{cropperOpts.cornerStyle}}"
+        ></view>
+        <view class="size" wx:if="{{cropperOpts.sizeInfo}}">{{movableViewWidth}} * {{movableViewHeight}} px</view>
+      </movable-view>
+    </movable-area>
+  </view>
+
+  <view class="btns">
+    <view class="cancel" bindtap="cancel">取消</view>
+    <view class="confirm" bindtap="getImg">确定</view>
+  </view>
+</view>
+<canvas canvas-id="weapp-cropper" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;position: absolute;left: -9999px;top: -9999px"></canvas>
