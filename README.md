@@ -1,7 +1,8 @@
 # weapp-cropper
 微信小程序图片裁剪
 ## 它看起来是这样的
-![example](./images/example.gif)
+![example](
+https://dgburntemp.oss-cn-qingdao.aliyuncs.com/2019-02-12%20150141.gif)
 
 ## 它支持一些功能, 它是一个简简单单的工具
 > - 支持网络, 项目中和相册选取的图片
