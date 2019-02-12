@@ -69,9 +69,11 @@ Component({
   externalClasses: ['outer-class'],
   
   ready() {
+    console.warn(this.properties.cropperOpts)
     Object.keys(this.properties.options).forEach(key => {
       this.data.cropperOpts[key] = this.properties.options[key]
     })
+    this.data.cropperOpts.cutRatio = Number(this.data.cropperOpts.cutRatio)
     this.init()
   },
   methods: {
@@ -148,6 +150,7 @@ Component({
         canvasWidth: this.data.imgInfo.width, // 根据图片宽高设置canvas大小
         canvasHeight: this.data.imgInfo.height
       }, () => {
+        console.warn(this.data.cropperOpts)
         const _this = this
         _this.ctx = wx.createCanvasContext('weapp-cropper', this)
         _this.data.movableViewInitWidth = movableViewWidth

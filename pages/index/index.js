@@ -28,7 +28,7 @@ Page({
   },
   cutImgUrl() {
     wx.navigateTo({
-      url: `/pages/cropper/cropper?url=${encodeURIComponent('https://cdn-hz.renrenjiang.cn/images/default/bg/bg5.png')}`
+      url: `/pages/cropper/cropper?url=${encodeURIComponent('http://www.pptok.com/wp-content/uploads/2012/08/xunguang-4.jpg')}`
     })
   },
   cutImgLocal() {

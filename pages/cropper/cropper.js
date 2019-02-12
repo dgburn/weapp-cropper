@@ -33,7 +33,7 @@ Page({
     console.warn(app)
     if (options.ratio) {
       this.setData({
-        'cropperOpt.cutRatio': 2
+        'cropperOpt.cutRatio': options.ratio
       })
     }
     console.warn('onLoad', decodeURIComponent(options.url))
