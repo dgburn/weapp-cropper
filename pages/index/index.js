@@ -28,7 +28,7 @@ Page({
   },
   cutImgUrl() {
     wx.navigateTo({
-      url: `/pages/cropper/cropper?url=${encodeURIComponent('http://www.pptok.com/wp-content/uploads/2012/08/xunguang-4.jpg')}`
+      url: `/pages/cropper/cropper?url=${encodeURIComponent('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549964140814&di=564c1289869d1dfc3325c15285b91b20&imgtype=0&src=http%3A%2F%2Fp1.so.qhmsg.com%2Ft01b233ba201511ff86.jpg')}`
     })
   },
   cutImgLocal() {

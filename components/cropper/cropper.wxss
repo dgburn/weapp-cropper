@@ -59,8 +59,8 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 20rpx;
-  height: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
   border-right: 6rpx solid #1AAD16;
   border-bottom: 6rpx solid #1AAD16;
 }
